@@ -64,6 +64,20 @@ Total wall clock time: 3h51m
 
 (Your table might be missing the RL number by default). For a lot more information around the speedrun script and what to look for and expect, please refer to the walkthrough that I posted in Discussions of the repo: ["Introducing nanochat: The best ChatGPT that $100 can buy"](https://github.com/karpathy/nanochat/discussions/1).
 
+## Documentation
+
+For detailed, step-by-step training guides and tutorials:
+
+- **📘 Complete Training Guide (English)**: [docs/training_guide_en.md](docs/training_guide_en.md) - Comprehensive guide covering every step from environment setup to final evaluation, including monitoring, troubleshooting, and cost estimates.
+
+- **📗 完整训练指南 (中文)**: [docs/training_guide_zh.md](docs/training_guide_zh.md) - 详细的端到端训练指南，涵盖从环境配置到最终评估的每个步骤，包括监控、故障排除和成本估算。
+
+- **📙 Tutorial Overview**: [tutorial.md](tutorial.md) - High-level overview of the nanochat architecture, components, and Karpathy's design philosophy.
+
+- **📕 Pure Python Tokenizer**: [docs/pure_python_tokenizer.md](docs/pure_python_tokenizer.md) - Educational implementation of BPE tokenizer in pure Python for learning how tokenization works.
+
+These guides are especially helpful if you have access to 8×H100 GPUs and want to understand exactly what happens at each stage of training.
+
 ## Bigger models
 
 Unsurprisingly, $100 is not enough to train a highly performant ChatGPT clone. In fact, LLMs are famous for their multi-million dollar capex. For our purposes, I think there are two more scales of interest. First is the ~$300 tier d26 model (i.e. depth=26) that trains in ~12 hours, which slightly outperforms GPT-2 CORE score. Second is the $1000 tier (~41.6 hours), just because it's a nice round number. But both of these are not yet fully supported and therefore not attached here in the master branch yet.
